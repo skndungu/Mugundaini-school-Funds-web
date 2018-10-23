@@ -101,14 +101,14 @@ body{
   .menu .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 22px;
+    font-size: 18px;
     text-transform: uppercase;
     padding: 1rem;
     font-weight: 350;
     color: #fff;
     text-decoration: none;
     transition: all 0.5s ease-out;
-    margin: 2px;
+    margin: 1.5px;
  }
   .menu .nav-link:hover {
       color: #000; 
@@ -359,6 +359,45 @@ footer{
     #background2{
         background-color: #aa8165;
     }
+    #background3{
+        background-color: #aaa965;
+    }
+    #heading{
+        margin-top: 90px;
+        text-align: center;
+    }
+.pledge {
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* LARGE SCREEN MEDIA  */
 
@@ -380,12 +419,12 @@ footer{
 
     /* SMALL SCREEEN MEDIA  */
      
-    @media(max-width: 500px){
+    @media(max-width: 599px){
         #navbar a{
             text-transform: uppercase;
-            color: black !important;
+            color: white !important;
             position: absolute; 
-            top: 25px;
+            top: 5px;
             left: 0px;
             font-weight: 600;
             background: #684118;
@@ -400,9 +439,20 @@ footer{
             position: absolute;
             z-index: 3;
             right: 20px;
-            top: 77px;
+            top: 67px;
             cursor: pointer;
             transition: all 0.5s ease-out; 
+        }
+
+        .title{
+            background: #684118;
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 1px;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+    
         }
 
         .beneficiaries img{
@@ -420,6 +470,14 @@ footer{
             padding: 10px;
             color: #000;
             font-weight: 600;
+        }
+        .menu-btn .btn-line{
+            width: 30px;
+            height: 4px;
+            margin: 0 0 5px 0;
+            background: white;
+            border-radius: 1px;
+            transition: all 0.5s ease-out; 
         }
 
 
@@ -450,6 +508,22 @@ footer{
             transition: all 0.5s ease-out; 
         }
 
+        .beneficiaries img{
+            width: 100%;
+            padding: 4px;
+            border-radius: 15px;
+            margin-left: 0;
+        }
+         
+        .description{
+            background: #63f237;
+            width: 500px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            color: #000;
+            font-weight: 600;
+        }
 
     }
 
@@ -459,7 +533,7 @@ footer{
             color: white !important;
             position: absolute; 
             top: 25px;
-            left: 470px;
+            left: 470px !important;
             font-weight: 600;
             background: #684118;
             width: auto;
@@ -475,6 +549,33 @@ footer{
             top: 8px;
             cursor: pointer;
             transition: all 0.5s ease-out; 
+        }
+
+        .title{
+            background: #684118;
+            width: 500px !important;
+            border-radius: 5px;
+            margin-top: 1px;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+    
+        }
+        .beneficiaries img{
+            width: 500px;
+            padding: 4px;
+            border-radius: 15px;
+            margin-left: 30.5%;
+        }
+         
+        .description{
+            background: #63f237;
+            width: 500px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            color: #000;
+            font-weight: 600;
         }
 
 
@@ -504,8 +605,6 @@ footer{
             cursor: pointer;
             transition: all 0.5s ease-out; 
         }
-
-
     }
     
 
