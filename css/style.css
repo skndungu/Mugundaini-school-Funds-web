@@ -7,6 +7,49 @@ body{
 #logo:hover{
     background: black;
 }
+#btn-pledge{
+    background-color: #00b202 !important;
+    opacity: 0.8;
+}
+#btn-pledge:hover{
+    background-color: #ffc90b !important;
+    opacity: 0.8;
+}
+#btn-pledge a{
+    color: white !important;
+    font-weight: 550;
+}
+#btn-pledge a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+#funds-btn:hover{
+    background-color: black;
+}
+
+
+ #funds-btn a{
+    color: white !important;
+    font-weight: 450;
+}
+
+#funds-btn a:hover{
+    text-decoration: none;
+}
+
+#beneficiaries-btn a:hover{
+    font-weight: 500;
+}
+
+#beneficiaries-btn a:hover{
+    background-color: white !important;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+
 .carousel-inner img{
     width: 100%;
     height: 600px;
