@@ -292,7 +292,7 @@ footer{
       text-align: center;
   }
   .wrapper{
-      /* box-shadow: 0 0 20px 0 rgba(72,94,116,0.7); */
+      box-shadow: 0 0 30px 0 rgba(61, 226, 28, 0.8);
   }
   .wrapper > *{
       padding: 1em;
@@ -394,6 +394,7 @@ footer{
         padding: 10px;
         color: #000;
         font-weight: 600;
+        cursor: pointer;
     }
     .description:hover{
         cursor: pointer;
@@ -414,9 +415,60 @@ footer{
 }
 
 
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+   background-color: #f4f4f4; 
+   margin: 20% auto;
+   padding: 20px;
+   width: 50%;
+   box-shadow: 0 5px 8px 0 rgba(0,0,0,0.9), 0 7px 22px 0 rgba(0,0,0,0.8);
+   animation-name:modalopen;
+   animation-duration: 2s;
+}
+.closeBtn:hover, .closeBtn:focus{
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.closeBtn{
+    color: red;
+    float: right;
+    font-size: 30px;
+}
+
+#program-support{
+  font-style: italic;
+  color:green;
+}
+
+#btn-home a{
+    text-decoration-color: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+#btn-home a:hover{
+    text-decoration: none;
+    color: red;
+    text-transform: lowercase;
+}
 
 
 
+
+ 
 
 
 
@@ -507,12 +559,13 @@ footer{
          
         .description{
             background: #63f237;
-            width: 500px;
+            width: 100%;
             border-radius: 5px;
             margin-bottom: 10px;
             padding: 10px;
             color: #000;
             font-weight: 600;
+            text-align: center;
         }
         .menu-btn .btn-line{
             width: 30px;
@@ -566,9 +619,38 @@ footer{
             padding: 10px;
             color: #000;
             font-weight: 600;
+            text-align: center;
         }
 
     }
+
+    
+    @media(min-width: 600px){
+        #navbar a{
+            text-transform: uppercase;
+            color: white !important;
+            position: absolute; 
+            top: 25px;
+            left: 20px;
+            font-weight: 600;
+            background: #684118;
+            width: auto;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 15pt;
+            opacity: 0.7;
+        }
+        .menu-btn{
+            position: absolute;
+            z-index: 3;
+            right: 20px;
+            top: 8px;
+            cursor: pointer;
+            transition: all 0.5s ease-out; 
+        }
+    }
+    
 
     @media(min-width: 1170px){
         #navbar a{
@@ -608,7 +690,8 @@ footer{
             width: 500px;
             padding: 4px;
             border-radius: 15px;
-            margin-left: 30.5%;
+            margin-left:470px;
+            
         }
          
         .description{
@@ -619,36 +702,9 @@ footer{
             padding: 10px;
             color: #000;
             font-weight: 600;
-        }
-
-
-    }
-
-    @media(min-width: 600px){
-        #navbar a{
-            text-transform: uppercase;
-            color: white !important;
-            position: absolute; 
-            top: 25px;
-            left: 20px;
-            font-weight: 600;
-            background: #684118;
-            width: auto;
             text-align: center;
-            padding: 15px;
-            border-radius: 8px;
-            font-size: 15pt;
-            opacity: 0.7;
         }
-        .menu-btn{
-            position: absolute;
-            z-index: 3;
-            right: 20px;
-            top: 8px;
-            cursor: pointer;
-            transition: all 0.5s ease-out; 
-        }
-    }
-    
 
-    
+
+    }
+
